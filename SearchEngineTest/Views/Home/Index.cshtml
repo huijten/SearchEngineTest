@@ -1,0 +1,15 @@
+﻿@{
+    Layout = "../Shared/_Homepage.cshtml";
+}
+
+<div class="title">
+    <h1 class="text-dark display-1 fw-bold p-2">Wayfinding.</h1>
+    <form asp-area="" asp-controller="Companies" asp-action="Details" method="post" class="m-2">
+        <div class="row align-content-center m-2">
+            <input name="searchKeyword" type="text" class="form-control" placeholder="Search by name or business">
+        </div>
+        <center>
+            <input type="submit" value="Search" class="btn btn-danger m-2" />
+        </center>
+    </form>
+</div>
